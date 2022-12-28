@@ -54,7 +54,7 @@ if [[ "$arch_count" -ge "$max_arch_count" ]]; then
     rm $(find $dst -type f -printf '%T+ %p\n' | grep ".tar.gz" | sort | head -n $diff | cut -d " " -f2)
 fi
 
-username=verbect
+username=maninegor
 ip=0.0.0.0.0
 dest_path=~/backups
 
