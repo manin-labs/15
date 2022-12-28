@@ -1,0 +1,9 @@
+[Unit]
+Wants=imer.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/bash /Manin15/backup.sh /Manin15 /home/Manin15backup/
+
+[Install]
+WantedBy=multi-user.target
