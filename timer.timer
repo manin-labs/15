@@ -1,0 +1,9 @@
+[Unit]
+Requires=task_to_backup.service
+
+[Timer]
+Unit=myBackuper.service
+OnCalendar=*-*-* *:*:00
+
+[Install]
+WantedBy=timers.target
