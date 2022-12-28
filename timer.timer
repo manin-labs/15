@@ -1,8 +1,8 @@
 [Unit]
-Requires=task_to_backup.service
+Requires=Mybackuper.service
 
 [Timer]
-Unit=myBackuper.service
+Unit=Mybackuper.service
 OnCalendar=*-*-* *:*:00
 
 [Install]
